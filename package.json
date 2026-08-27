@@ -1,0 +1,19 @@
+{
+  "name": "course-devtools-live-notifications",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/notification_service.ts",
+    "example": "node --experimental-strip-types src/learning_event_example.ts",
+    "test": "node --experimental-strip-types --test test/notification_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "typescript": "^5.9.2"
+  }
+}
